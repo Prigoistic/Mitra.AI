@@ -1,4 +1,4 @@
-# AI Study Assistant
+# Mitra.Ai
 
 A modern, Notion-style study assistant application that uses the Gemini AI to generate summaries and quizzes for any topic.
 
