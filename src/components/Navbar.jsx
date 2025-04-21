@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">AI Study Assistant</Link>
+        <Link to="/">mitra.ai</Link>
       </div>
       
       <button className="navbar-menu-button" onClick={toggleMenu}>

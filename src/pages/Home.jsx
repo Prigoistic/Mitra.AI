@@ -69,7 +69,7 @@ const Home = () => {
       <div className="decoration-yellow decoration-2"></div>
       
       <section className="hero-section">
-        <div className="hero-category">STUDY ASSISTANT</div>
+        <div className="hero-category">YOUR OWN KIND</div>
         <h1 className="hero-title">
           Learn <span>anything</span>. Understand everything.
         </h1>
@@ -101,7 +101,7 @@ const Home = () => {
             className="hero-illustration illustration-left"
           />
           <img 
-            src="/images/read.png" 
+            src="public/images/calculator.png" 
             alt="Learning illustration" 
             className="hero-illustration illustration-center"
           />
