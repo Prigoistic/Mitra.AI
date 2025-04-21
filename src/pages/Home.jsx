@@ -101,7 +101,7 @@ const Home = () => {
             className="hero-illustration illustration-left"
           />
           <img 
-            src="public/images/calculator.png" 
+            src="/images/calculator.png" 
             alt="Learning illustration" 
             className="hero-illustration illustration-center"
           />
