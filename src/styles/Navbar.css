@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-background-primary);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.navbar-brand a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-brand a:hover {
+  color: var(--color-accent);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar-links a:hover {
+  color: var(--color-text-primary);
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.2s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link style */
+.navbar-links a.active {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+.navbar-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  .navbar-menu-button {
+    display: block;
+  }
+  
+  .navbar-links {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--color-background-primary);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 8px var(--color-shadow);
+    padding: 1rem 0;
+  }
+  
+  .navbar-links.open {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    padding: 1rem 1.5rem;
+    width: 100%;
+  }
+  
+  .navbar-links a::after {
+    display: none;
+  }
+  
+  .navbar-links a.active {
+    background-color: var(--color-background-tertiary);
+  }
+} 
