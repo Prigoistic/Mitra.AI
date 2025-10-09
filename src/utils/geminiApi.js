@@ -14,7 +14,7 @@ export const generateSummary = async (topic) => {
     console.log('API Key:', apiKey ? 'Present' : 'Missing');
     
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       contents: `Create a comprehensive, well-structured summary about ${topic}. Organize the content into clear sections with the following structure:
 
 1. Introduction
@@ -70,7 +70,7 @@ export const generateQuiz = async (topic) => {
     console.log('API Key:', apiKey ? 'Present' : 'Missing');
     
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       contents: `Create 5 multiple choice questions about ${topic}. Format each question as a JSON object with the following structure:
       {
         "question": "question text",
